@@ -322,6 +322,14 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
+Persian (F)
+Level: 11
+Ability: ABILITY_FATAL_STRIKE
+IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe
+Nature: Impish
+- Shock Wave
+- Water Pulse
+
 Slakoth (F) @ leftovers
 Level: 13
 Ability: ABILITY_TRUANT

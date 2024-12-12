@@ -291,6 +291,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 10,
     },
 
+    [ABILITY_FELINE_PROWESS] = 
+    {
+        .name = _("Feline Prowess"),
+        .description = COMPOUND_STRING("Raises Sp Attack."),
+        .aiRating = 10
+    },
+
     [ABILITY_POISON_POINT] =
     {
         .name = _("Poison Point"),
@@ -1470,6 +1477,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Merciless"),
         .description = COMPOUND_STRING("Criticals poisoned foes."),
         .aiRating = 4,
+    },
+
+    [ABILITY_FATAL_STRIKE] = 
+    {
+        .name = _("Fatal Strike"),
+        .description = COMPOUND_STRING("Always critical hits."),
+        .aiRating = 10,
     },
 
     [ABILITY_SHIELDS_DOWN] =

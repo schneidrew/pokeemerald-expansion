@@ -6218,7 +6218,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_PERSIAN] =
     {
         .baseHP        = 65,
-        .baseAttack    = 90,
+        .baseAttack    = 85,
         .baseDefense   = 60,
         .baseSpeed     = 115,
         .baseSpAttack  = 85,
@@ -6234,9 +6234,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_LIMBER, ABILITY_TECHNICIAN, ABILITY_UNNERVE },
+        .abilities = { ABILITY_LIMBER, ABILITY_TECHNICIAN, ABILITY_FATAL_STRIKE },
     #else
-        .abilities = { ABILITY_LIMBER, ABILITY_NONE, ABILITY_UNNERVE },
+        .abilities = { ABILITY_LIMBER, ABILITY_NONE, ABILITY_FATAL_STRIKE },
     #endif
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Persian"),
