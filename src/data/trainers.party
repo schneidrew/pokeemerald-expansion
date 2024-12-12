@@ -322,9 +322,14 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 11
+Slakoth
+Level: 13
+Ability: ABILITY_TRUANT
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Slack Off
+- Rest
+- Sleep Talk 
+- Scratch
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: GRUNT
@@ -4801,7 +4806,7 @@ AI: Smart Trainer
 Geodude (M) @ Custap Berry
 Level: 13
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Ability: Sturdy
+Ability: ABILITY_TRUANT
 Nature: Adamant
 - Bulldoze
 - Self Destruct

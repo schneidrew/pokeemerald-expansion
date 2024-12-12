@@ -5277,7 +5277,8 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 }
                 break;
             case ABILITY_TRUANT:
-                gDisableStructs[gBattlerAttacker].truantCounter ^= 1;
+                // gDisableStructs[gBattlerAttacker].truantCounter ^= 1;
+                gDisableStructs[gBattlerAttacker].truantCounter = (RandomUniform(RNG_NONE, 0, 2) == 0);
                 break;
             case ABILITY_BAD_DREAMS:
                 BattleScriptPushCursorAndCallback(BattleScript_BadDreamsActivates);
