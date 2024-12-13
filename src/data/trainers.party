@@ -322,12 +322,13 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Volbeat (F)
+Illumise (F)
 Level: 12
-Ability: ABILITY_BIOLESCENCE
-IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe
-Nature: Impish
-- thundershock
+Ability: ABILITY_VIRTUOSO
+IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
+Nature: relaxed
+- tackle
+- roost
 
 Slakoth (F) @ leftovers
 Level: 13
