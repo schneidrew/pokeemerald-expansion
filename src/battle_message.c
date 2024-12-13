@@ -885,7 +885,11 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_ELECTRICCURRENTISRUNNING]             = COMPOUND_STRING("An electric current is running across the battlefield!"),
     [STRINGID_SEEMSWEIRD]                           = COMPOUND_STRING("The battlefield seems weird!"),
     [STRINGID_WAGGLINGAFINGER]                      = COMPOUND_STRING("Waggling a finger let it use {B_CURRENT_MOVE}!"),
+
+    // custom
     [STRINGID_PKMNRAISEDSPATK]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY} raised its Sp. Atk!"), //not in gen 5+, ability popup
+    [STRINGID_ABILITYWEAKENEDCALMINGFLOWERSTATS]    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY} weakened {B_BUFF1} and {B_BUFF2}!\p"),
+
 
 };
 

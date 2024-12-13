@@ -852,6 +852,10 @@ extern const u8 BattleScript_EffectSpicyExtract[];
 extern const u8 BattleScript_DamageToQuarterTargetHP[];
 extern const u8 BattleScript_EffectFickleBeam[];
 extern const u8 BattleScript_FickleBeamDoubled[];
+
+// custom
 extern const u8 BattleScript_BiolescenceActivates[];
+extern const u8 BattleScript_CalmingFlowerAbilityActivates[];
+
 
 #endif // GUARD_BATTLE_SCRIPTS_H

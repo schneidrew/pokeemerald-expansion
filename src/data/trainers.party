@@ -320,15 +320,23 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
-Illumise (F)
+Slugma (F)
+Level: 13
+Ability: ABILITY_MAGMA_CAPTURE
+IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
+Nature: Relaxed
+- Rock Throw
+- Tackle
+
+Bayleef (F)
 Level: 12
-Ability: ABILITY_VIRTUOSO
+Ability: ABILITY_CALMING_FLOWER
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
 Nature: relaxed
 - tackle
-- roost
+- razor leaf
 
 Slakoth (F) @ leftovers
 Level: 13
@@ -339,22 +347,6 @@ Nature: Relaxed
 - Slash
 - Feint Attack
 
-Poochyena (M) @ blackglasses
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-Nature: Jolly
-- MOVE_BITE
-- MOVE_HOWL
-- MOVE_TACKLE
-- MOVE_ROAR
-
-SPECIES_ZIGZAGOON_GALAR (M) @ ITEM_SILK_SCARF
-Level: 15
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-Nature: Bashful
-- MOVE_HEADBUTT
-- MOVE_SNARL
-- MOVE_HONE_CLAWS
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: GRUNT

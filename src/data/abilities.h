@@ -153,6 +153,14 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
+    [ABILITY_MAGMA_CAPTURE] = 
+    {
+        .name = _("Magma Capture"),
+        .description = COMPOUND_STRING("Powers up if hit by water or rock."),
+        .aiRating = 7,
+        .breakable = TRUE,
+    },
+
     [ABILITY_SHIELD_DUST] =
     {
         .name = _("Shield Dust"),
@@ -2240,6 +2248,15 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Lowers foes' Sp. Defense."),
         .aiRating = 5,
         .breakable = TRUE,
+    },
+
+    [ABILITY_CALMING_FLOWER] = 
+    {
+        .name = _("Calming Flower"),
+        .description = COMPOUND_STRING("Lowers foes' damage."),
+        .aiRating = 5,
+        .breakable = TRUE,
+
     },
 
     [ABILITY_ORICHALCUM_PULSE] =
