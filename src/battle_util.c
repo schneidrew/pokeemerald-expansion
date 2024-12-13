@@ -5237,6 +5237,15 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     effect++;
                 }
                 break;
+            case ABILITY_BIOLESCENCE:
+                if (CompareStat(battler, STAT_SPATK, MAX_STAT_STAGE, CMP_LESS_THAN) && gDisableStructs[battler].isFirstTurn != 2)
+                {
+                    SET_STATCHANGER(STAT_SPATK, 1, FALSE);
+                    BattleScriptPushCursorAndCallback(BattleScript_BiolescenceActivates);
+                    gBattleScripting.battler = battler;
+                    effect++;
+                }
+                break;
             case ABILITY_MOODY:
                 if (gDisableStructs[battler].isFirstTurn != 2)
                 {
@@ -5278,7 +5287,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 break;
             case ABILITY_TRUANT:
                 // gDisableStructs[gBattlerAttacker].truantCounter ^= 1;
-                gDisableStructs[gBattlerAttacker].truantCounter = (RandomUniform(RNG_NONE, 0, 2) == 0);
+                gDisableStructs[gBattlerAttacker].truantCounter = (RandomUniform(RNG_NONE, 0, 1) == 0);
                 break;
             case ABILITY_BAD_DREAMS:
                 BattleScriptPushCursorAndCallback(BattleScript_BadDreamsActivates);

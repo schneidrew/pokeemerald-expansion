@@ -7632,6 +7632,16 @@ BattleScript_SpeedBoostActivates::
 BattleScript_SpeedBoostActivatesEnd:
 	end3
 
+BattleScript_BiolescenceActivates::
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_BiolescenceActivatesEnd
+	call BattleScript_AbilityPopUp
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_PKMNRAISEDSPATK
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_BiolescenceActivatesEnd:
+	end3
+
 @ Can't compare directly to a value, have to compare to value at pointer
 sZero:
 .byte 0

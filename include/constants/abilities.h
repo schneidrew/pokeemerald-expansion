@@ -342,8 +342,9 @@
 // custom abilities
 #define ABILITY_FELINE_PROWESS 311
 #define ABILITY_FATAL_STRIKE 312
+#define ABILITY_BIOLESCENCE 313
 
-#define ABILITIES_COUNT_CUSTOM 313
+#define ABILITIES_COUNT_CUSTOM 314
 
 
 // total count

@@ -30,6 +30,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 9,
     },
 
+    [ABILITY_BIOLESCENCE] = 
+    {
+        .name = _("Biolescence"),
+        .description = COMPOUND_STRING("Gradually boosts SpAttack."),
+        .aiRating = 9,
+    },
+
     [ABILITY_BATTLE_ARMOR] =
     {
         .name = _("Battle Armor"),
