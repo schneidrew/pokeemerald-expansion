@@ -3699,6 +3699,16 @@ u8 AtkCanceller_UnableToUseMove(u32 moveType)
 
                 PREPARE_BYTE_NUMBER_BUFFER(gBattleScripting.multihitString, 1, 0)
             }
+            else if (gMovesInfo[gCurrentMove].punchingMove)
+            {
+                u32 ability = GetBattlerAbility(gBattlerAttacker);
+                if (ability == ABILITY_MULTI_PUNCH)
+                {
+                    gMultiHitCounter = 2;
+                    PREPARE_BYTE_NUMBER_BUFFER(gBattleScripting.multihitString, 1, 0)
+
+                }
+            }
             else if (gMovesInfo[gCurrentMove].strikeCount > 1)
             {
                 if (gMovesInfo[gCurrentMove].effect == EFFECT_POPULATION_BOMB && GetBattlerHoldEffect(gBattlerAttacker, TRUE) == HOLD_EFFECT_LOADED_DICE)

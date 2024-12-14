@@ -935,10 +935,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_LEDYBA
     [SPECIES_LEDYBA] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 20,
-        .baseDefense   = 30,
-        .baseSpeed     = 55,
+        .baseHP        = 50,
+        .baseAttack    = 30,
+        .baseDefense   = 40,
+        .baseSpeed     = 65,
         .baseSpAttack  = 40,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
@@ -950,7 +950,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_EARLY_BIRD, ABILITY_RATTLED },
+        .abilities = { ABILITY_SWARM, ABILITY_EARLY_BIRD, ABILITY_MULTI_PUNCH },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Ledyba"),
         .cryId = CRY_LEDYBA,
@@ -1010,10 +1010,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_LEDIAN] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 95,
-        .baseDefense   = 50,
-        .baseSpeed     = 95,
+        .baseHP        = 65,
+        .baseAttack    = 45,
+        .baseDefense   = 60,
+        .baseSpeed     = 85,
         .baseSpAttack  = 55,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
@@ -1025,7 +1025,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_EARLY_BIRD, ABILITY_IRON_FIST },
+        .abilities = { ABILITY_IRON_FIST, ABILITY_EARLY_BIRD, ABILITY_MULTI_PUNCH },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Ledian"),
         .cryId = CRY_LEDIAN,

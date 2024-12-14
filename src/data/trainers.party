@@ -320,7 +320,15 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Basic Trainer
+
+
+Ledian (F) 
+Level: 10
+Ability: ABILITY_MULTI_PUNCH
+IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
+Nature: Relaxed
+- MOVE_DRAIN_PUNCH
 
 Slugma (F)
 Level: 13

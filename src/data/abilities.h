@@ -720,6 +720,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 7,
     },
 
+    [ABILITY_MULTI_PUNCH] = 
+    {
+        .name = _("Multi Punch"),
+        .description = COMPOUND_STRING("Punch moves hit twice."),
+        .aiRating = 7,
+    },
+
     [ABILITY_HYDRATION] =
     {
         .name = _("Hydration"),
