@@ -323,15 +323,15 @@ Double Battle: No
 AI: Basic Trainer
 
 
-Hoothoot (F) 
-Level: 8
-Ability: ABILITY_NIGHT_VISION
+Delibird (F) 
+Level: 16
+Ability: ABILITY_GIFT_LUCK
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
 Nature: Relaxed
-- MOVE_FOCUS_BLAST
+- MOVE_BUBBLE_BEAM
 
 Slugma (F)
-Level: 13
+Level: 16
 Ability: ABILITY_MAGMA_CAPTURE
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
 Nature: Relaxed

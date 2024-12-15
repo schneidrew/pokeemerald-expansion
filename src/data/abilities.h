@@ -268,6 +268,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
+    [ABILITY_GIFT_LUCK] = 
+    {
+        .name = _("Gift Luck"),
+        .description = COMPOUND_STRING("Guarantees added effects."),
+        .aiRating = 9,
+    },
+
     [ABILITY_SWIFT_SWIM] =
     {
         .name = _("Swift Swim"),
@@ -1106,6 +1113,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Blocks weather and powder."),
         .aiRating = 5,
         .breakable = TRUE,
+    },
+
+    [ABILITY_PESTILENCE] = 
+    {
+        .name = _("Pestilence"),
+        .description = COMPOUND_STRING("Powder moves cause infestation."),
+        .aiRating = 6,
     },
 
     [ABILITY_POISON_TOUCH] =
