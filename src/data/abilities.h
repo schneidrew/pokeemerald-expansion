@@ -776,6 +776,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
+    [ABILITY_NIGHT_VISION] = 
+    {
+        .name = _("Night Vision"),
+        .description = COMPOUND_STRING("User's moves always hit."),
+        .aiRating = 8,
+    },
+
     [ABILITY_STALL] =
     {
         .name = _("Stall"),

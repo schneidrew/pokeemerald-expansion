@@ -631,21 +631,21 @@ F_TRAINER_FEMALE |
         {
             {
 #line 326
-            .species = SPECIES_LEDIAN,
+            .species = SPECIES_HOOTHOOT,
 #line 326
             .gender = TRAINER_MON_FEMALE,
 #line 329
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 0, 0, 31),
 #line 328
-            .ability = ABILITY_MULTI_PUNCH,
+            .ability = ABILITY_NIGHT_VISION,
 #line 327
-            .lvl = 10,
+            .lvl = 8,
 #line 330
             .nature = NATURE_RELAXED,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 331
-                MOVE_DRAIN_PUNCH,
+                MOVE_FOCUS_BLAST,
             },
             },
             {

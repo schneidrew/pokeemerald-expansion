@@ -592,6 +592,8 @@ static bool8 WildEncounterCheck(u32 encounterRate, bool8 ignoreAbility)
             encounterRate /= 2;
         else if (ability == ABILITY_NO_GUARD)
             encounterRate *= 2;
+        else if (ability == ABILITY_NIGHT_VISION)
+            encounterRate *= 2;
     }
     if (encounterRate > MAX_ENCOUNTER_RATE)
         encounterRate = MAX_ENCOUNTER_RATE;

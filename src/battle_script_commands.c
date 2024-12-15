@@ -1464,12 +1464,12 @@ static bool32 AccuracyCalcHelper(u16 move)
         return TRUE;
     }
     // If the attacker has the ability No Guard and they aren't targeting a Pokemon involved in a Sky Drop with the move Sky Drop, move hits.
-    else if (GetBattlerAbility(gBattlerAttacker) == ABILITY_NO_GUARD
+    else if (((GetBattlerAbility(gBattlerAttacker) == ABILITY_NO_GUARD) || (GetBattlerAbility(gBattlerAttacker) == ABILITY_NIGHT_VISION))
           && !(gStatuses3[gBattlerTarget] & STATUS3_COMMANDER)
           && (gMovesInfo[move].effect != EFFECT_SKY_DROP || gBattleStruct->skyDropTargets[gBattlerTarget] == 0xFF))
     {
         if (!JumpIfMoveFailed(7, move))
-            RecordAbilityBattle(gBattlerAttacker, ABILITY_NO_GUARD);
+            RecordAbilityBattle(gBattlerAttacker, GetBattlerAbility(gBattlerAttacker));
         return TRUE;
     }
     // If the target has the ability No Guard and they aren't involved in a Sky Drop or the current move isn't Sky Drop, move hits.
@@ -12365,6 +12365,7 @@ static void Cmd_tryKO(void)
         if ((((gStatuses3[gBattlerTarget] & STATUS3_ALWAYS_HITS)
                 && gDisableStructs[gBattlerTarget].battlerWithSureHit == gBattlerAttacker)
             || GetBattlerAbility(gBattlerAttacker) == ABILITY_NO_GUARD
+            || GetBattlerAbility(gBattlerAttacker) == ABILITY_NIGHT_VISION
             || targetAbility == ABILITY_NO_GUARD)
             && gBattleMons[gBattlerAttacker].level >= gBattleMons[gBattlerTarget].level)
         {
