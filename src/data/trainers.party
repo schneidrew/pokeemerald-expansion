@@ -323,12 +323,12 @@ Double Battle: No
 AI: check bad move
 
 
-Jigglypuff (F) @ eviolite
+Paras (F) @ eviolite
 Level: 13
-Ability: ABILITY_BOUNCE_BACK
+Ability: ABILITY_PESTILENCE
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe
 Nature: Relaxed
-- Disarming Voice
+- Spore
 
 
 Slakoth (F) @ sitrus berry
