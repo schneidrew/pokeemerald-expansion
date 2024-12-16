@@ -1368,6 +1368,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 6,
     },
 
+    [ABILITY_STRIKER] = 
+    {
+        .name = _("Striker"),
+        .description = COMPOUND_STRING("Boosts kicking moves."),
+        .aiRating = 6,
+    },
+
     [ABILITY_REFRIGERATE] =
     {
         .name = _("Refrigerate"),

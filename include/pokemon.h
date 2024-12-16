@@ -531,6 +531,7 @@ struct MoveInfo
     u32 ignoresSubstitute:1;
     u32 forcePressure:1;
     u32 cantUseTwice:1;
+    u32 kickMove:1;
 
     // Ban flags
     u32 gravityBanned:1;
