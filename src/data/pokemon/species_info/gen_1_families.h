@@ -4656,9 +4656,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 76,
         .baseDefense   = 75,
         .baseSpeed     = 100,
-        .baseSpAttack  = 91,
+        .baseSpAttack  = 81,
         .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_FIRE),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_FAIRY),
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 177 : 178,
         .evYield_Speed = 1,
@@ -4787,7 +4787,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 67,
         .baseDefense   = 75,
         .baseSpeed     = 109,
-        .baseSpAttack  = 91,
+        .baseSpAttack  = 81,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_ICE, TYPE_FAIRY),
         .catchRate = 75,
@@ -4944,9 +4944,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
     #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE, ABILITY_FRIEND_GUARD },
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE, ABILITY_BOUNCE_BACK },
     #else
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_FRIEND_GUARD },
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_BOUNCE_BACK },
     #endif
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
@@ -5020,9 +5020,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
     #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_FLUFFY, ABILITY_COMPETITIVE, ABILITY_FRISK },
+        .abilities = { ABILITY_FLUFFY, ABILITY_COMPETITIVE, ABILITY_BOUNCE_BACK },
     #else
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_FRISK },
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_BOUNCE_BACK },
     #endif
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,

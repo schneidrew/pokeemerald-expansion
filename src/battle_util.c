@@ -5799,6 +5799,24 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_BOUNCE_BACK:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && IsBattlerAlive(gBattlerAttacker)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && TARGET_TURN_DAMAGED)
+            {
+
+                // gBattleMoveDamage = GetNonDynamaxMaxHP(gBattlerAttacker) / (B_ROUGH_SKIN_DMG >= GEN_4 ? 8 : 16);
+                gBattleMoveDamage = max(1, (gBattleMoveDamage * 50 / 100));
+
+                // if (gBattleMoveDamage == 0)
+                //     gBattleMoveDamage = 1;
+                PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_RoughSkinActivates;
+                effect++;
+            }
+            break;
         case ABILITY_AFTERMATH:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && !IsBattlerAlive(gBattlerTarget)

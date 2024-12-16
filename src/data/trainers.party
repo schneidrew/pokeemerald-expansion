@@ -323,6 +323,14 @@ Double Battle: No
 AI: check bad move
 
 
+Jigglypuff (F) @ eviolite
+Level: 13
+Ability: ABILITY_BOUNCE_BACK
+IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe
+Nature: Relaxed
+- Disarming Voice
+
+
 Slakoth (F) @ sitrus berry
 Level: 13
 Ability: ABILITY_TRUANT
