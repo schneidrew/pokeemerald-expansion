@@ -631,61 +631,61 @@ F_TRAINER_FEMALE |
         {
             {
 #line 326
-            .species = SPECIES_SPINDA,
+            .species = SPECIES_BAYLEEF,
 #line 326
             .gender = TRAINER_MON_FEMALE,
 #line 329
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 0, 0, 31),
 #line 328
-            .ability = ABILITY_EVASIVE_DANCE,
+            .ability = ABILITY_CALMING_FLOWER,
 #line 327
-            .lvl = 20,
+            .lvl = 14,
 #line 330
             .nature = NATURE_RELAXED,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 331
+                MOVE_TACKLE,
+                MOVE_RAZOR_LEAF,
+            },
+            },
+            {
+#line 334
+            .species = SPECIES_SPINDA,
+#line 334
+            .gender = TRAINER_MON_FEMALE,
+#line 337
+            .iv = TRAINER_PARTY_IVS(31, 0, 31, 0, 0, 31),
+#line 336
+            .ability = ABILITY_EVASIVE_DANCE,
+#line 335
+            .lvl = 20,
+#line 338
+            .nature = NATURE_RELAXED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 339
                 MOVE_HYPNOSIS,
             },
             },
             {
-#line 333
-            .species = SPECIES_SLUGMA,
-#line 333
-            .gender = TRAINER_MON_FEMALE,
-#line 336
-            .iv = TRAINER_PARTY_IVS(31, 0, 31, 0, 0, 31),
-#line 335
-            .ability = ABILITY_MAGMA_CAPTURE,
-#line 334
-            .lvl = 16,
-#line 337
-            .nature = NATURE_RELAXED,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 338
-                MOVE_ROCK_THROW,
-                MOVE_TACKLE,
-            },
-            },
-            {
 #line 341
-            .species = SPECIES_BAYLEEF,
+            .species = SPECIES_SLUGMA,
 #line 341
             .gender = TRAINER_MON_FEMALE,
 #line 344
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 0, 0, 31),
 #line 343
-            .ability = ABILITY_CALMING_FLOWER,
+            .ability = ABILITY_MAGMA_CAPTURE,
 #line 342
-            .lvl = 12,
+            .lvl = 16,
 #line 345
             .nature = NATURE_RELAXED,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 346
+                MOVE_ROCK_THROW,
                 MOVE_TACKLE,
-                MOVE_RAZOR_LEAF,
             },
             },
             {
