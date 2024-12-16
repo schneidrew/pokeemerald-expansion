@@ -631,7 +631,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 326
-            .species = SPECIES_JIGGLYPUFF,
+            .species = SPECIES_PARAS,
 #line 326
             .gender = TRAINER_MON_FEMALE,
 #line 326
@@ -639,7 +639,7 @@ F_TRAINER_FEMALE |
 #line 329
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 15, 0, 31),
 #line 328
-            .ability = ABILITY_BOUNCE_BACK,
+            .ability = ABILITY_PESTILENCE,
 #line 327
             .lvl = 13,
 #line 330
@@ -647,7 +647,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 331
-                MOVE_DISARMING_VOICE,
+                MOVE_COTTON_SPORE,
             },
             },
             {

@@ -3596,33 +3596,6 @@ u8 AtkCanceller_UnableToUseMove(u32 moveType)
 
                 if (effect != 0)
                     gBattlescriptCurrInstr = BattleScript_PowderMoveNoEffect;
-                else if (GetBattlerAbility(gBattlerAttacker) == ABILITY_PESTILENCE)
-                {
-                    if (gBattleMons[gEffectBattler].status2 & STATUS2_WRAPPED)
-                    {
-                        gBattlescriptCurrInstr++;
-                    }
-                    else
-                    {
-                        gBattleMons[gEffectBattler].status2 |= STATUS2_WRAPPED;
-                        if (GetBattlerHoldEffect(gBattlerAttacker, TRUE) == HOLD_EFFECT_GRIP_CLAW)
-                            gDisableStructs[gEffectBattler].wrapTurns = B_BINDING_TURNS >= GEN_5 ? 7 : 5;
-                        else
-                            gDisableStructs[gEffectBattler].wrapTurns = B_BINDING_TURNS >= GEN_5 ? (Random() % 2) + 4 : (Random() % 4) + 2;
-
-                        gBattleStruct->wrappedMove[gEffectBattler] = MOVE_INFESTATION;
-                        gBattleStruct->wrappedBy[gEffectBattler] = gBattlerAttacker;
-
-                        BattleScriptPush(gBattlescriptCurrInstr + 1);
-                        gBattlescriptCurrInstr = sMoveEffectBS_Ptrs[gBattleScripting.moveEffect];
-
-                        for (gBattleCommunication[MULTISTRING_CHOOSER] = 0; gBattleCommunication[MULTISTRING_CHOOSER] < NUM_TRAPPING_MOVES; gBattleCommunication[MULTISTRING_CHOOSER]++)
-                        {
-                            if (sTrappingMoves[gBattleCommunication[MULTISTRING_CHOOSER]] == gCurrentMove)
-                                break;
-                        }
-                    }
-                }
             }
             gBattleStruct->atkCancellerTracker++;
             break;
@@ -6272,6 +6245,27 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_PESTILENCE:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && IsBattlerAlive(gBattlerTarget)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && !(gBattleMons[gBattlerTarget].status2 & STATUS2_WRAPPED))
+             {
+                gBattleMons[gBattlerTarget].status2 |= STATUS2_WRAPPED;
+                if (GetBattlerHoldEffect(gBattlerAttacker, TRUE) == HOLD_EFFECT_GRIP_CLAW)
+                    gDisableStructs[gBattlerTarget].wrapTurns = B_BINDING_TURNS >= GEN_5 ? 7 : 5;
+                else
+                    gDisableStructs[gBattlerTarget].wrapTurns = B_BINDING_TURNS >= GEN_5 ? (Random() % 2) + 4 : (Random() % 4) + 2;
+
+                gBattleStruct->wrappedMove[gBattlerTarget] = MOVE_INFESTATION;
+                gBattleStruct->wrappedBy[gBattlerTarget] = gBattlerAttacker;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_AbilityPestilence;
+
+                effect++;
+
+             }
+             break;
         }
         break;
     case ABILITYEFFECT_MOVE_END_OTHER: // Abilities that activate on *another* battler's moveend: Dancer, Soul-Heart, Receiver, Symbiosis

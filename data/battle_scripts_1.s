@@ -8750,6 +8750,12 @@ BattleScript_AbilityStatusEffect::
 	seteffectsecondary
 	return
 
+BattleScript_AbilityPestilence::
+	waitstate
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_ABILITYPESTILENCEACTIVATES
+	return 
+
 BattleScript_BattleBondActivatesOnMoveEndAttacker::
 	pause 5
 	copybyte gBattlerAbility, gBattlerAttacker
