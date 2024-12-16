@@ -859,6 +859,7 @@ extern const u8 BattleScript_CalmingFlowerAbilityActivates[];
 extern const u8 BattleScript_EvasiveDanceAbilityActivates[];
 extern const u8 BattleScript_CorneredActivates[];
 extern const u8 BattleScript_AbilityPestilence[];
+extern const u8 BattleScript_SweetAromaActivates[];
 
 
 #endif // GUARD_BATTLE_SCRIPTS_H

@@ -323,13 +323,13 @@ Double Battle: No
 AI: check bad move
 
 
-Paras (F) @ eviolite
+Bellsprout (F) @ eviolite
 Level: 13
-Ability: ABILITY_PESTILENCE
+Ability: ABILITY_SWEET_AROMA
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe
 Nature: Relaxed
-- Absorb
-- Spore 
+- acid
+- absorb 
 
 
 Slakoth (F) @ sitrus berry

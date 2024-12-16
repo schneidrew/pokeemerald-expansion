@@ -192,6 +192,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 7,
     },
 
+    [ABILITY_SWEET_AROMA] = 
+    {
+        .name = _("Sweet Aroma"),
+        .description = COMPOUND_STRING("Lowers the foe's Speed."),
+        .aiRating = 7,
+    },
+
     [ABILITY_SHADOW_TAG] =
     {
         .name = _("Shadow Tag"),
