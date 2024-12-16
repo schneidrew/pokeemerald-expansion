@@ -2497,4 +2497,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+    [ABILITY_QUICK_STRIKE] = 
+    {
+        .name = _("Quick Strike"),
+        .description = COMPOUND_STRING("Ignores charging turns."),
+        .aiRating = 6,
+    },
 };

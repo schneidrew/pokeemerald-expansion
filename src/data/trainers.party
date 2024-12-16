@@ -323,12 +323,12 @@ Double Battle: No
 AI: Basic Trainer
 
 
-Raticate (F)
+Spearow (F) @ Ground Gem
 Level: 14
-Ability: ABILITY_CORNERED
+Ability: ABILITY_QUICK_STRIKE
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
 Nature: relaxed
-- scratch
+- Dig
 
 Spinda (F) 
 Level: 20

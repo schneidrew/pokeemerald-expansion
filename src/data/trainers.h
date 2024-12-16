@@ -631,13 +631,15 @@ F_TRAINER_FEMALE |
         {
             {
 #line 326
-            .species = SPECIES_RATICATE,
+            .species = SPECIES_SPEAROW,
 #line 326
             .gender = TRAINER_MON_FEMALE,
+#line 326
+            .heldItem = ITEM_GROUND_GEM,
 #line 329
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 0, 0, 31),
 #line 328
-            .ability = ABILITY_CORNERED,
+            .ability = ABILITY_QUICK_STRIKE,
 #line 327
             .lvl = 14,
 #line 330
@@ -645,7 +647,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 331
-                MOVE_SCRATCH,
+                MOVE_DIG,
             },
             },
             {

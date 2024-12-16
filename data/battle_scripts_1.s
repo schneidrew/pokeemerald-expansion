@@ -3697,12 +3697,18 @@ BattleScript_PowerHerbActivation:
 	removeitem BS_ATTACKER
 	return
 
+BattleScript_QuickStrikeActivation:
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_QUICKSTRIKE
+	return
+
 BattleScript_EffectTwoTurnsAttack::
 	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_TwoTurnMovesSecondTurn
 	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_TwoTurnMovesSecondTurn
 	tryfiretwoturnmovewithoutcharging BS_ATTACKER, BattleScript_EffectHit @ e.g. Solar Beam
 	call BattleScript_FirstChargingTurn
 	tryfiretwoturnmoveaftercharging BS_ATTACKER, BattleScript_TwoTurnMovesSecondTurn @ e.g. Electro Shot
+	jumpifability BS_ATTACKER, ABILITY_QUICK_STRIKE, BattleScript_TwoTurnMovesSecondQuickStrikeActivates
 	jumpifholdeffect BS_ATTACKER, HOLD_EFFECT_POWER_HERB, BattleScript_TwoTurnMovesSecondPowerHerbActivates
 	goto BattleScript_MoveEnd
 
@@ -3774,6 +3780,10 @@ BattleScript_FromTwoTurnMovesSecondTurnRet:
 	attackstring
 .endif
 	goto BattleScript_HitFromCritCalc
+
+BattleScript_TwoTurnMovesSecondQuickStrikeActivates:
+	call BattleScript_QuickStrikeActivation
+	trygulpmissile @ Edge case for Cramorant ability Gulp Missile
 
 BattleScript_TwoTurnMovesSecondTurn::
 	attackcanceler
