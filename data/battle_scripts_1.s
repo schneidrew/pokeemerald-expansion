@@ -8828,6 +8828,9 @@ BattleScript_MoveUsedLoafingAroundMsg::
 	end
 BattleScript_TruantLoafingAround::
 	call BattleScript_AbilityPopUp
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
 	goto BattleScript_MoveUsedLoafingAroundMsg
 
 BattleScript_IgnoresAndFallsAsleep::

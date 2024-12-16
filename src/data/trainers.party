@@ -320,39 +320,15 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Basic Trainer
+AI: check bad move
 
 
-Spearow (F) @ Ground Gem
-Level: 14
-Ability: ABILITY_QUICK_STRIKE
-IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
-Nature: relaxed
-- Dig
-
-Spinda (F) 
-Level: 20
-Ability: ABILITY_EVASIVE_DANCE
-IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
-Nature: Relaxed
-- MOVE_HYPNOSIS
-
-Slugma (F)
-Level: 16
-Ability: ABILITY_MAGMA_CAPTURE
-IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
-Nature: Relaxed
-- Rock Throw
-- Tackle
-
-Slakoth (F) @ leftovers
+Slakoth (F) @ sitrus berry
 Level: 13
 Ability: ABILITY_TRUANT
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Nature: Relaxed
-- Slack Off
-- Slash
-- Feint Attack
+- scratch
 
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===

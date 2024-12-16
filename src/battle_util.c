@@ -3356,6 +3356,14 @@ u8 AtkCanceller_UnableToUseMove(u32 moveType)
                 CancelMultiTurnMoves(gBattlerAttacker);
                 gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LOAFING;
+
+                if (!BATTLER_MAX_HP(gBattlerAttacker)
+                    && !(gStatuses3[gBattlerAttacker] & STATUS3_HEAL_BLOCK)
+                    && IsBattlerAlive(gBattlerAttacker))
+                {
+                    gBattleMoveDamage = -1*(GetNonDynamaxMaxHP(gBattlerAttacker) / 8);
+                }
+
                 gBattlerAbility = gBattlerAttacker;
                 gBattlescriptCurrInstr = BattleScript_TruantLoafingAround;
                 gMoveResultFlags |= MOVE_RESULT_MISSED;

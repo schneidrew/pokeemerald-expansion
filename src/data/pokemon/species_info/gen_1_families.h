@@ -2240,7 +2240,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_FEAROW] =
     {
         .baseHP        = 65,
-        .baseAttack    = 100,
+        .baseAttack    = 90,
         .baseDefense   = 65,
         .baseSpeed     = 100,
         .baseSpAttack  = 61,
