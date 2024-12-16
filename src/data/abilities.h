@@ -209,7 +209,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_BOUNCE_BACK] = 
     {
         .name = _("Bounce Back"),
-        .description = COMPOUND_STRING("Bounces back damage."),
+        .description = COMPOUND_STRING("Retaliates physical damage."),
         .aiRating = 7,
     },
 
