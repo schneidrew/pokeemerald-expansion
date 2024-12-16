@@ -6248,6 +6248,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_PESTILENCE:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && IsBattlerAlive(gBattlerTarget)
+             && (gMovesInfo[gCurrentMove].powderMove || gMovesInfo[gCurrentMove].seedMove)
              && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
              && !(gBattleMons[gBattlerTarget].status2 & STATUS2_WRAPPED))
              {

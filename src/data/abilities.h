@@ -1125,7 +1125,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_PESTILENCE] = 
     {
         .name = _("Pestilence"),
-        .description = COMPOUND_STRING("Powder moves cause infestation."),
+        .description = COMPOUND_STRING("Powder and seed moves infest."),
         .aiRating = 6,
     },
 

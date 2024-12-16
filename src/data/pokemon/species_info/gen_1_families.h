@@ -5661,13 +5661,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_PARASECT] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 115,
+        .baseHP        = 70,
+        .baseAttack    = 105,
         .baseDefense   = 90,
         .baseSpeed     = 30,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 80,
         .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_GHOST, TYPE_GRASS),
+        .types = MON_TYPES(TYPE_BUG, TYPE_GHOST),
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 128,
         .evYield_Attack = 2,
