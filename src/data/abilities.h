@@ -1708,6 +1708,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeOverwritten = TRUE,
     },
 
+    [ABILITY_ON_GUARD] = 
+    {
+        .name = _("On Guard"),
+        .description = COMPOUND_STRING("Can attack while asleep."),
+        .aiRating = 5,
+    },
+
     [ABILITY_QUEENLY_MAJESTY] =
     {
         .name = _("Queenly Majesty"),

@@ -323,13 +323,13 @@ Double Battle: No
 AI: check bad move
 
 
-Bellsprout (F) @ eviolite
-Level: 13
-Ability: ABILITY_SWEET_AROMA
+Doduo (F) @ eviolite
+Level: 14
+Ability: ABILITY_ON_GUARD
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe
 Nature: Relaxed
-- acid
-- absorb 
+- growl
+- rest
 
 
 Slakoth (F) @ sitrus berry

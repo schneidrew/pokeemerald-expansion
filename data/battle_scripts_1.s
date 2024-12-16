@@ -2928,6 +2928,13 @@ BattleScript_FlowerVeilProtectsRet::
 	waitmessage B_WAIT_TIME_LONG
 	return
 
+BattleScript_OnGuardActivates::
+	pause B_WAIT_TIME_SHORT
+	copybyte gBattlerAbility, gBattlerAttacker
+	call BattleScript_AbilityPopUp
+	waitmessage B_WAIT_TIME_LONG
+	return 
+
 BattleScript_FlowerVeilProtects:
 	call BattleScript_FlowerVeilProtectsRet
 	orhalfword gMoveResultFlags, MOVE_RESULT_FAILED

@@ -631,7 +631,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 326
-            .species = SPECIES_BELLSPROUT,
+            .species = SPECIES_DODUO,
 #line 326
             .gender = TRAINER_MON_FEMALE,
 #line 326
@@ -639,16 +639,16 @@ F_TRAINER_FEMALE |
 #line 329
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 15, 0, 31),
 #line 328
-            .ability = ABILITY_SWEET_AROMA,
+            .ability = ABILITY_ON_GUARD,
 #line 327
-            .lvl = 13,
+            .lvl = 14,
 #line 330
             .nature = NATURE_RELAXED,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 331
-                MOVE_ACID,
-                MOVE_ABSORB,
+                MOVE_GROWL,
+                MOVE_REST,
             },
             },
             {
