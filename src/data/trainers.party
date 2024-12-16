@@ -323,13 +323,12 @@ Double Battle: No
 AI: Basic Trainer
 
 
-Bayleef (F)
+Raticate (F)
 Level: 14
-Ability: ABILITY_CALMING_FLOWER
+Ability: ABILITY_CORNERED
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
 Nature: relaxed
-- tackle
-- razor leaf
+- scratch
 
 Spinda (F) 
 Level: 20

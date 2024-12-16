@@ -1873,6 +1873,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 3,
     },
 
+    [ABILITY_CORNERED] = 
+    {
+        .name = _("Cornered"),
+        .description = COMPOUND_STRING("Lower Attack of all when hit."),
+        .aiRating = 4,
+    },
+
     [ABILITY_PROPELLER_TAIL] =
     {
         .name = _("Propeller Tail"),

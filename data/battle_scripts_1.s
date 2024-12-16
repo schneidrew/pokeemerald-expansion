@@ -7162,6 +7162,33 @@ BattleScript_CottonDownLoopIncrement:
 	copybyte gBattlerAttacker, sSAVED_BATTLER
 	return
 
+
+BattleScript_CorneredActivates::
+	copybyte sSAVED_BATTLER, gBattlerAttacker
+	call BattleScript_AbilityPopUpTarget
+	copybyte gEffectBattler, gBattlerTarget
+	swapattackerwithtarget
+	setbyte gBattlerTarget, 0
+BattleScript_CoorneredLoop:
+	jumpiffainted BS_TARGET, TRUE, BattleScript_CorneredLoopIncrement
+	setstatchanger STAT_ATK, 1, TRUE
+	jumpifbyteequal gBattlerTarget, gEffectBattler, BattleScript_CorneredLoopIncrement
+	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED, BattleScript_CorneredTargetAttackCantGoLower
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_CorneredLoopIncrement
+BattleScript_CorneredTargetAttackCantGoLower:
+	printstring STRINGID_STATSWONTDECREASE
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_CorneredLoopIncrement:
+	addbyte gBattlerTarget, 1
+	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_CoorneredLoop
+	swapattackerwithtarget
+	copybyte gBattlerAttacker, sSAVED_BATTLER
+	return
+
 BattleScript_AnticipationActivates::
 	pause 5
 	call BattleScript_AbilityPopUp
