@@ -1549,6 +1549,9 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
     u32 atkAlly = BATTLE_PARTNER(battlerAtk);
     u32 atkAllyAbility = GetBattlerAbility(atkAlly);
 
+    u32 defAlly = BATTLE_PARTNER(battlerDef);
+    u32 defAllyAbility = GetBattlerAbility(defAlly);
+
     gPotentialItemEffectBattler = battlerDef;
     accStage = gBattleMons[battlerAtk].statStages[STAT_ACC];
     evasionStage = gBattleMons[battlerDef].statStages[STAT_EVASION];
@@ -1580,6 +1583,10 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
 
     calc = gAccuracyStageRatios[buff].dividend * moveAcc;
     calc /= gAccuracyStageRatios[buff].divisor;
+
+    if ((atkAllyAbility == ABILITY_EVASIVE_DANCE || defAbility == ABILITY_EVASIVE_DANCE || defAllyAbility == ABILITY_EVASIVE_DANCE)
+        && (atkAbility != ABILITY_EVASIVE_DANCE))
+        calc = (calc * 75) / 100; // 0.75 Evasive dance boost
 
     // Attacker's ability
     switch (atkAbility)

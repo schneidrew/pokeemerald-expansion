@@ -323,12 +323,12 @@ Double Battle: No
 AI: Basic Trainer
 
 
-Delibird (F) 
-Level: 16
-Ability: ABILITY_GIFT_LUCK
+Spinda (F) 
+Level: 20
+Ability: ABILITY_EVASIVE_DANCE
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
 Nature: Relaxed
-- MOVE_BUBBLE_BEAM
+- MOVE_HYPNOSIS
 
 Slugma (F)
 Level: 16

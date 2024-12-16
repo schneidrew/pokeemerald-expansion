@@ -631,21 +631,21 @@ F_TRAINER_FEMALE |
         {
             {
 #line 326
-            .species = SPECIES_DELIBIRD,
+            .species = SPECIES_SPINDA,
 #line 326
             .gender = TRAINER_MON_FEMALE,
 #line 329
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 0, 0, 31),
 #line 328
-            .ability = ABILITY_GIFT_LUCK,
+            .ability = ABILITY_EVASIVE_DANCE,
 #line 327
-            .lvl = 13,
+            .lvl = 20,
 #line 330
             .nature = NATURE_RELAXED,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 331
-                MOVE_BUBBLE_BEAM,
+                MOVE_HYPNOSIS,
             },
             },
             {

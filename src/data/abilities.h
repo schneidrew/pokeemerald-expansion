@@ -2278,6 +2278,14 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
+    [ABILITY_EVASIVE_DANCE] = 
+    {
+        .name = _("Evasive Dance"),
+        .description = COMPOUND_STRING("Lowers foes' Accuracy."),
+        .aiRating = 6,
+        .breakable = TRUE,
+    },
+
     [ABILITY_CALMING_FLOWER] = 
     {
         .name = _("Calming Flower"),

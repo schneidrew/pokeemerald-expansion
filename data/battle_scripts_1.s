@@ -8019,6 +8019,12 @@ BattleScript_CalmingFlowerAbilityActivates::
 	waitmessage B_WAIT_TIME_LONG
 	end3
 
+BattleScript_EvasiveDanceAbilityActivates::
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_ABILITYWEAKENEDEVASIVEDANCESTATS
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
 BattleScript_SupremeOverlordActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp

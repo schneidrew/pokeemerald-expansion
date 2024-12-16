@@ -5026,6 +5026,15 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_EVASIVE_DANCE:
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                PREPARE_STAT_BUFFER(gBattleTextBuff1, STAT_ACC);
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                BattleScriptPushCursorAndCallback(BattleScript_EvasiveDanceAbilityActivates);
+                effect++;
+            }
+            break;
         case ABILITY_CALMING_FLOWER:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
@@ -9782,6 +9791,10 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
 
     if (IsAbilityOnField(ABILITY_TABLETS_OF_RUIN) && atkAbility != ABILITY_TABLETS_OF_RUIN && IS_MOVE_PHYSICAL(move))
         modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.75));
+
+    if (IsAbilityOnField(ABILITY_CALMING_FLOWER) && atkAbility != ABILITY_CALMING_FLOWER)
+        modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.75));
+
 
     // attacker's hold effect
     switch (holdEffectAtk)
