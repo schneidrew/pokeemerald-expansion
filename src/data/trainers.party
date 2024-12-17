@@ -323,13 +323,12 @@ Double Battle: No
 AI: check bad move
 
 
-Doduo (F) @ eviolite
-Level: 14
-Ability: ABILITY_ON_GUARD
+Grimer (F) @ eviolite
+Level: 11
+Ability: ABILITY_TOXIC_OOZE
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe
 Nature: Relaxed
-- growl
-- rest
+- curse
 
 
 Slakoth (F) @ sitrus berry

@@ -1143,6 +1143,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 4,
     },
 
+    [ABILITY_TOXIC_OOZE] = 
+    {
+        .name = _("Toxic Ooze"),
+        .description = COMPOUND_STRING("Always poisons on contact."),
+        .aiRating = 5,
+    },
+
     [ABILITY_REGENERATOR] =
     {
         .name = _("Regenerator"),
