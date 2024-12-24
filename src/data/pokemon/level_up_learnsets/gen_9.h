@@ -7926,7 +7926,7 @@ static const struct LevelUpMove sProbopassLevelUpLearnset[] = {
 #if P_FAMILY_SKITTY
 static const struct LevelUpMove sSkittyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_BABY_DOLL_EYES),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 4, MOVE_TACKLE),
     LEVEL_UP_MOVE( 7, MOVE_SING),
@@ -7940,8 +7940,9 @@ static const struct LevelUpMove sSkittyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(34, MOVE_COVET),
     LEVEL_UP_MOVE(37, MOVE_HEAL_BELL),
     LEVEL_UP_MOVE(40, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(43, MOVE_BABY_DOLL_EYES),
+    LEVEL_UP_MOVE(43, MOVE_HYPER_VOICE),
     LEVEL_UP_MOVE(46, MOVE_PLAY_ROUGH),
+    LEVEL_UP_MOVE(56, MOVE_BOOMBURST),
     LEVEL_UP_END
 };
 
@@ -7949,7 +7950,7 @@ static const struct LevelUpMove sDelcattyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE( 1, MOVE_SING),
     LEVEL_UP_MOVE( 1, MOVE_ATTRACT),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_BABY_DOLL_EYES),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
@@ -7961,7 +7962,7 @@ static const struct LevelUpMove sDelcattyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_COVET),
     LEVEL_UP_MOVE( 1, MOVE_HEAL_BELL),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE( 1, MOVE_BABY_DOLL_EYES),
+    LEVEL_UP_MOVE( 1, MOVE_HYPER_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_PLAY_ROUGH),
     LEVEL_UP_END
 };

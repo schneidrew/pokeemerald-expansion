@@ -1480,6 +1480,14 @@ static bool32 AccuracyCalcHelper(u16 move)
             RecordAbilityBattle(gBattlerTarget, ABILITY_NO_GUARD);
         return TRUE;
     }
+    // If the attacker has the ability Soprano using a sound move, move hits.
+    else if ((GetBattlerAbility(gBattlerAttacker) == ABILITY_SOPRANO)
+          && (gMovesInfo[move].soundMove))
+    {
+        if (!JumpIfMoveFailed(7, move))
+            RecordAbilityBattle(gBattlerAttacker, GetBattlerAbility(gBattlerAttacker));
+        return TRUE;
+    }
     // If the target is under the effects of Telekinesis, and the move isn't a OH-KO move, move hits.
     else if (gStatuses3[gBattlerTarget] & STATUS3_TELEKINESIS
           && !(gStatuses3[gBattlerTarget] & STATUS3_SEMI_INVULNERABLE)

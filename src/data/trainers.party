@@ -323,12 +323,12 @@ Double Battle: No
 AI: check bad move
 
 
-Grimer (F) @ eviolite
-Level: 11
-Ability: ABILITY_TOXIC_OOZE
+Meowth (F) @ ITEM_RAZOR_CLAW
+Level: 13
+Ability: ABILITY_FATAL_STRIKE
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe
 Nature: Relaxed
-- curse
+- scratch
 
 
 Slakoth (F) @ sitrus berry
@@ -2136,9 +2136,23 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nidoran M @ Nugget
+Level: 11
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Poison Sting
+- Tackle
+
+Nidoran F @ Nugget
+Level: 11
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Poison Sting
+- Tackle
+
+Igglybuff @ Nugget
+Level: 11
+- Sing
+- Disarming Voice
+- Pound
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
@@ -5969,8 +5983,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Poochyena
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 9
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Tackle
+- Snarl
+- Howl
+
+Zigzagoon
+Level: 9
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Tackle
+- Growl
+- Tail Whip
+
 
 === TRAINER_BILLY ===
 Name: BILLY
@@ -5981,13 +6006,24 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mankey
+Level: 11
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Scratch
+- Karate Chop
 
 Seedot
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 11
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bide
+- Bullet Seed
+
+Ekans
+Level: 11
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Poison Sting
+- Tail Whip
+- Bite
 
 === TRAINER_JOSH ===
 Name: JOSH
@@ -5996,12 +6032,35 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Geodude
-Level: 10
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
+Chewtle (M) @ Mystic Water
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: ABILITY_SHELL_ARMOR
+Nature: Impish
+- Rock Throw
+- Aqua Jet
+- Bite
+
+Dwebble (M) @ Lum Berry
+Level: 13
+Ability: ABILITY_WEAK_ARMOR
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Nature: Jolly
+- Hone Claws
+- Bug Bite
+- Rock Throw
+
+ToedScool (M) @ Grip Claw
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Nature: Bashful
+- Mud shot
+- Wrap
+- Acid Spray
+- Absorb
+
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -6010,15 +6069,37 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Geodude
-Level: 8
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Aron (M) @ Silk Scarf
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: ABILITY_ROCK_HEAD
+Nature: Relaxed
+- take Down
+- rock Tomb
+- metal claw
 
-Geodude
-Level: 8
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Tirtouga (M) @ Hard Stone
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: ABILITY_SOLID_ROCK
+Nature: Jolly
+- Rock Tomb
+- Flail
+- Aqua Jet
+
+Golett (M)
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: ABILITY_NO_GUARD
+Nature: Sassy
+- Protect
+- Toxic
+- Bulldoze
+- Icy Wind 
+
+
 
 === TRAINER_JOEY ===
 Name: JOEY
@@ -6234,13 +6315,19 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lotad
+Level: 10
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Absorb
+- water Gun
 
-Taillow
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wingull
+Level: 10
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Gust
+- water Gun
+- growl
+- Supersonic
 
 === TRAINER_TIMMY ===
 Name: TIMMY
@@ -11070,15 +11157,29 @@ Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ralts
+Level: 11
+Ability: ABILITY_TRACE
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Disarming Voice
+- Confusion
+- Teleport
 
-Shroomish
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cleffa
+Level: 11
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Pound
+- Disarming Voice
+- Sing
+
+Marill
+Ability: ABILITY_HUGE_POWER
+Level: 11
+- Tackle
+- Aqua Jet
+- Covet 
 
 === TRAINER_HALEY_1 ===
 Name: HALEY
@@ -11277,12 +11378,27 @@ Double Battle: No
 AI: Check Bad Move
 
 Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 10
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Poison Sting
+- Tackle
+- String shot
 
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cascoon
+Level: 10
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Poison Sting
+- Tackle
+- String shot
+- Harden
+
+Silcoon
+Level: 10
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- poison Sting
+- Tackle
+- string shot
+- Harden
 
 === TRAINER_LYLE ===
 Name: LYLE
@@ -12996,8 +13112,24 @@ Double Battle: No
 AI: Check Bad Move
 
 Magikarp
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 13
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Splash
+- Tackle
+
+Goldeen
+Level: 11
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Supersonic
+- Peck
+- Splash
+
+Surskit
+Level: 11
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bubble
+- String shot
+- Struggle Bug
 
 === TRAINER_HAILEY ===
 Name: HAILEY

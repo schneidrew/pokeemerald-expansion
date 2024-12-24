@@ -1039,6 +1039,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 4,
     },
 
+    [ABILITY_ACCURSE] = 
+    {
+        .name = _("Accurse"),
+        .description = COMPOUND_STRING("Curses for on contact."),
+        .aiRating = 4,
+    },
+
     [ABILITY_HEALER] =
     {
         .name = _("Healer"),
@@ -1379,6 +1386,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Strong Jaw"),
         .description = COMPOUND_STRING("Boosts biting moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_SOPRANO] = 
+    {
+        .name = _("Soprano"),
+        .description = COMPOUND_STRING("Boosts sound power and acuracy."),
         .aiRating = 6,
     },
 
@@ -2390,6 +2404,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Toxic Debris"),
         .description = COMPOUND_STRING("Throws poison spikes if hit."),
+        .aiRating = 4,
+    },
+
+    [ABILITY_TOXIC_SCALES] = 
+    {
+        .name = _("Toxic Scales"),
+        .description = COMPOUND_STRING("Throws poison spikes if attacked."),
         .aiRating = 4,
     },
 

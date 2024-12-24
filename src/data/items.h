@@ -1916,7 +1916,8 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Rare Candy"),
         .pluralName = _("Rare Candies"),
-        .price = (I_PRICE >= GEN_7) ? 10000 : 4800,
+        .price = 10,
+        // .price = (I_PRICE >= GEN_7) ? 10000 : 4800,
         .description = COMPOUND_STRING(
             "Raises the level\n"
             "of a Pokémon by\n"
@@ -2629,6 +2630,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Pearl"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR: 1400,
+        .holdEffect = HOLD_EFFECT_PEARL,
         .description = COMPOUND_STRING(
             "A pretty pearl\n"
             "that would sell at a\n"
@@ -2645,6 +2647,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Big Pearl"),
         .price = (I_PRICE >= GEN_7) ? 8000 * TREASURE_FACTOR: 7500,
+        .holdEffect = HOLD_EFFECT_BIG_PEARL,
         .description = COMPOUND_STRING(
             "A lovely large pearl\n"
             "that would sell at a\n"
@@ -8762,11 +8765,11 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Razor Claw"),
         .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 5000 : 2100),
-        .holdEffect = HOLD_EFFECT_SCOPE_LENS,
+        .holdEffect = HOLD_EFFECT_RAZOR_CLAW,
         .description = COMPOUND_STRING(
             "A hooked claw that\n"
             "ups the holder's\n"
-            "critical-hit ratio."),
+            "critical-hit damage."),
         .pocket = POCKET_ITEMS,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
