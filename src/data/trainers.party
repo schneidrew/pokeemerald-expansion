@@ -4825,10 +4825,10 @@ Items: Potion / Potion
 Double Battle: No
 AI: Smart Trainer
 
-Geodude (M) @ Custap Berry
+Geodude-Alola (M) @ Custap Berry
 Level: 13
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Ability: ABILITY_TRUANT
+Ability: ABILITY_STURDY
 Nature: Adamant
 - Bulldoze
 - Self Destruct
@@ -4846,7 +4846,7 @@ Nature: Impish
 - Magnitude
 
 Nosepass @ Chesto Berry
-Level: 16
+Level: 15
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 Nature: Relaxed
 Shiny: Yes

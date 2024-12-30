@@ -1361,6 +1361,14 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
+    [ABILITY_HARD_SHELL] = 
+    {
+        .name = ("Hard Shell"),
+        .description = COMPOUND_STRING("Raises Defense"),
+        .aiRating = 7,
+        .breakable = TRUE,
+    },
+
     [ABILITY_MAGICIAN] =
     {
         .name = _("Magician"),

@@ -10057,6 +10057,7 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
                 RecordAbilityBattle(battlerDef, ABILITY_MARVEL_SCALE);
         }
         break;
+    case ABILITY_HARD_SHELL:
     case ABILITY_FUR_COAT:
         if (usesDefStat)
         {
