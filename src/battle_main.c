@@ -72,6 +72,9 @@
 #include "constants/weather.h"
 #include "cable_club.h"
 
+/* including caps for dynamic leveling of trainer teams */
+#include "caps.h"
+
 extern const struct BgTemplate gBattleBgTemplates[];
 extern const struct WindowTemplate *const gBattleWindowTemplates[];
 
@@ -1944,6 +1947,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             u32 otIdType = OT_ID_RANDOM_NO_SHINY;
             u32 fixedOtId = 0;
             u32 ability = 0;
+            u8 level = GetCurrentLevelCap() - partyData[i].lvl;
 
             if (trainer->doubleBattle == TRUE)
                 personalityValue = 0x80;
@@ -1965,7 +1969,9 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 otIdType = OT_ID_PRESET;
                 fixedOtId = HIHALF(personalityValue) ^ LOHALF(personalityValue);
             }
-            CreateMon(&party[i], partyData[i].species, partyData[i].lvl, 0, TRUE, personalityValue, otIdType, fixedOtId);
+
+            CreateMon(&party[i], partyData[i].species, level, 0, TRUE, personalityValue, otIdType, fixedOtId);
+            // CreateMon(&party[i], partyData[i].species, partyData[i].lvl, 0, TRUE, personalityValue, otIdType, fixedOtId);
             SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
 
             CustomTrainerPartyAssignMoves(&party[i], &partyData[i]);

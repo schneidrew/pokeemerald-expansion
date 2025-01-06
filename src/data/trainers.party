@@ -1,3 +1,5 @@
+#pragma trainerproc level 5
+
 /*
 Trainers and their parties defined with Competetive Syntax.
 Compatible with Pokemon Showdown exports.
@@ -5983,14 +5985,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Poochyena
-Level: 9
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Tackle
 - Snarl
 - Howl
 
 Zigzagoon
-Level: 9
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Tackle
 - Growl
