@@ -11951,7 +11951,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 4828
-            .species = SPECIES_GEODUDE,
+            .species = SPECIES_GEODUDE_ALOLA,
 #line 4828
             .gender = TRAINER_MON_MALE,
 #line 4828
@@ -11959,7 +11959,7 @@ F_TRAINER_FEMALE |
 #line 4830
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
 #line 4831
-            .ability = ABILITY_TRUANT,
+            .ability = ABILITY_STURDY,
 #line 4829
             .lvl = 13,
 #line 4832
@@ -12006,7 +12006,7 @@ F_TRAINER_FEMALE |
 #line 4850
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
 #line 4849
-            .lvl = 16,
+            .lvl = 15,
 #line 4851
             .nature = NATURE_RELAXED,
 #line 4852
