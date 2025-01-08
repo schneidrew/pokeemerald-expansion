@@ -11585,7 +11585,7 @@
           "map": "MAP_RUSTBORO_CITY",
           "base_label": "gRustboroCity0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,
