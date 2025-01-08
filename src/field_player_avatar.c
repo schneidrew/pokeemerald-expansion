@@ -1949,7 +1949,8 @@ static bool32 Fishing_ChangeMinigame(struct Task *task)
             break;
         case GEN_3:
         default:
-            task->tStep = FISHING_WAIT_FOR_A;
+            // task->tStep = FISHING_WAIT_FOR_A;
+            task->tStep = FISHING_A_PRESS_NO_MINIGAME;
             break;
     }
     return TRUE;
