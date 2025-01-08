@@ -820,8 +820,8 @@
       "x": 9,
       "y": 1,
       "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1"
+      "item": "ITEM_NUGGET",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_NUGGET_10"
     },
     {
       "type": "hidden_item",
@@ -836,8 +836,8 @@
       "x": 0,
       "y": 86,
       "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_2"
+      "item": "ITEM_NUGGET",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_NUGGET_11"
     },
     {
       "type": "hidden_item",

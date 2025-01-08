@@ -681,7 +681,7 @@ Route110_TrickHouseEntrance_EventScript_GiveReward::
 # 341 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 Route110_TrickHouseEntrance_EventScript_GivePuzzle1Reward::
 # 342 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
-	giveitem ITEM_RARE_CANDY
+	giveitem ITEM_NUGGET
 # 343 "data/maps/Route110_TrickHouseEntrance/scripts.pory"
 	goto_if_eq VAR_RESULT, TRUE, Route110_TrickHouseEntrance_EventScript_GotReward
 # 344 "data/maps/Route110_TrickHouseEntrance/scripts.pory"

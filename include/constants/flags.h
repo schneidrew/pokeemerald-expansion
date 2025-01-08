@@ -600,7 +600,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_110_REVIVE                    (FLAG_HIDDEN_ITEMS_START + 0x36)
 #define FLAG_HIDDEN_ITEM_ROUTE_110_FULL_HEAL                 (FLAG_HIDDEN_ITEMS_START + 0x37)
 #define FLAG_HIDDEN_ITEM_ROUTE_111_PROTEIN                   (FLAG_HIDDEN_ITEMS_START + 0x38)
-#define FLAG_HIDDEN_ITEM_ROUTE_111_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x39)
+#define FLAG_HIDDEN_ITEM_ROUTE_111_NUGGET_10                (FLAG_HIDDEN_ITEMS_START + 0x39)
 #define FLAG_HIDDEN_ITEM_PETALBURG_WOODS_POTION              (FLAG_HIDDEN_ITEMS_START + 0x3A)
 #define FLAG_HIDDEN_ITEM_PETALBURG_WOODS_TINY_MUSHROOM_1     (FLAG_HIDDEN_ITEMS_START + 0x3B)
 #define FLAG_HIDDEN_ITEM_PETALBURG_WOODS_TINY_MUSHROOM_2     (FLAG_HIDDEN_ITEMS_START + 0x3C)
@@ -612,9 +612,9 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_118_HEART_SCALE               (FLAG_HIDDEN_ITEMS_START + 0x42)
 #define FLAG_HIDDEN_ITEM_ROUTE_118_IRON                      (FLAG_HIDDEN_ITEMS_START + 0x43)
 #define FLAG_HIDDEN_ITEM_ROUTE_119_FULL_HEAL                 (FLAG_HIDDEN_ITEMS_START + 0x44)
-#define FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_2              (FLAG_HIDDEN_ITEMS_START + 0x45)
+#define FLAG_HIDDEN_ITEM_ROUTE_120_NUGGET_10                (FLAG_HIDDEN_ITEMS_START + 0x45)
 #define FLAG_HIDDEN_ITEM_ROUTE_120_ZINC                      (FLAG_HIDDEN_ITEMS_START + 0x46)
-#define FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1              (FLAG_HIDDEN_ITEMS_START + 0x47)
+#define FLAG_HIDDEN_ITEM_ROUTE_120_NUGGET_11                (FLAG_HIDDEN_ITEMS_START + 0x47)
 #define FLAG_HIDDEN_ITEM_ROUTE_117_REPEL                     (FLAG_HIDDEN_ITEMS_START + 0x48)
 #define FLAG_HIDDEN_ITEM_ROUTE_121_FULL_HEAL                 (FLAG_HIDDEN_ITEMS_START + 0x49)
 #define FLAG_HIDDEN_ITEM_ROUTE_123_HYPER_POTION              (FLAG_HIDDEN_ITEMS_START + 0x4A)
@@ -623,13 +623,13 @@
 #define FLAG_HIDDEN_ITEM_JAGGED_PASS_FULL_HEAL               (FLAG_HIDDEN_ITEMS_START + 0x4D)
 #define FLAG_HIDDEN_ITEM_MT_PYRE_EXTERIOR_MAX_ETHER          (FLAG_HIDDEN_ITEMS_START + 0x4E)
 #define FLAG_HIDDEN_ITEM_MT_PYRE_SUMMIT_ZINC                 (FLAG_HIDDEN_ITEMS_START + 0x4F)
-#define FLAG_HIDDEN_ITEM_MT_PYRE_SUMMIT_RARE_CANDY           (FLAG_HIDDEN_ITEMS_START + 0x50)
+#define FLAG_HIDDEN_ITEM_MT_PYRE_SUMMIT_NUGGET_10           (FLAG_HIDDEN_ITEMS_START + 0x50)
 #define FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_ULTRA_BALL          (FLAG_HIDDEN_ITEMS_START + 0x51)
 #define FLAG_HIDDEN_ITEM_VICTORY_ROAD_B2F_ELIXIR             (FLAG_HIDDEN_ITEMS_START + 0x52)
 #define FLAG_HIDDEN_ITEM_VICTORY_ROAD_B2F_MAX_REPEL          (FLAG_HIDDEN_ITEMS_START + 0x53)
 #define FLAG_HIDDEN_ITEM_ROUTE_120_REVIVE                    (FLAG_HIDDEN_ITEMS_START + 0x54)
 #define FLAG_HIDDEN_ITEM_ROUTE_104_ANTIDOTE                  (FLAG_HIDDEN_ITEMS_START + 0x55)
-#define FLAG_HIDDEN_ITEM_ROUTE_108_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x56)
+#define FLAG_HIDDEN_ITEM_ROUTE_108_NUGGET_10                (FLAG_HIDDEN_ITEMS_START + 0x56)
 #define FLAG_HIDDEN_ITEM_ROUTE_119_MAX_ETHER                 (FLAG_HIDDEN_ITEMS_START + 0x57)
 #define FLAG_HIDDEN_ITEM_ROUTE_104_HEART_SCALE               (FLAG_HIDDEN_ITEMS_START + 0x58)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_HEART_SCALE               (FLAG_HIDDEN_ITEMS_START + 0x59)
@@ -638,7 +638,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_128_HEART_SCALE_1             (FLAG_HIDDEN_ITEMS_START + 0x5C)
 #define FLAG_HIDDEN_ITEM_ROUTE_128_HEART_SCALE_2             (FLAG_HIDDEN_ITEMS_START + 0x5D)
 #define FLAG_HIDDEN_ITEM_ROUTE_128_HEART_SCALE_3             (FLAG_HIDDEN_ITEMS_START + 0x5E)
-#define FLAG_HIDDEN_ITEM_PETALBURG_CITY_RARE_CANDY           (FLAG_HIDDEN_ITEMS_START + 0x5F)
+#define FLAG_HIDDEN_ITEM_PETALBURG_CITY_NUGGET_10           (FLAG_HIDDEN_ITEMS_START + 0x5F)
 #define FLAG_HIDDEN_ITEM_ROUTE_116_BLACK_GLASSES             (FLAG_HIDDEN_ITEMS_START + 0x60)
 #define FLAG_HIDDEN_ITEM_ROUTE_115_HEART_SCALE               (FLAG_HIDDEN_ITEMS_START + 0x61)
 #define FLAG_HIDDEN_ITEM_ROUTE_113_NUGGET                    (FLAG_HIDDEN_ITEMS_START + 0x62)
@@ -649,11 +649,11 @@
 #define FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_PROTEIN            (FLAG_HIDDEN_ITEMS_START + 0x67)
 #define FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_IRON               (FLAG_HIDDEN_ITEMS_START + 0x68)
 #define FLAG_HIDDEN_ITEM_SAFARI_ZONE_SOUTH_EAST_FULL_RESTORE (FLAG_HIDDEN_ITEMS_START + 0x69)
-#define FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_RARE_CANDY   (FLAG_HIDDEN_ITEMS_START + 0x6A)
+#define FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET_10   (FLAG_HIDDEN_ITEMS_START + 0x6A)
 #define FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_ZINC         (FLAG_HIDDEN_ITEMS_START + 0x6B)
 #define FLAG_HIDDEN_ITEM_SAFARI_ZONE_SOUTH_EAST_PP_UP        (FLAG_HIDDEN_ITEMS_START + 0x6C)
 #define FLAG_HIDDEN_ITEM_NAVEL_ROCK_TOP_SACRED_ASH           (FLAG_HIDDEN_ITEMS_START + 0x6D)
-#define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
+#define FLAG_HIDDEN_ITEM_ROUTE_123_NUGGET_10                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
 #define FLAG_UNUSED_0x264  0x264 // Unused Flag
@@ -1056,7 +1056,7 @@
 #define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
-#define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE
+#define FLAG_ITEM_ROUTE_110_NUGGET_10                              0x3EE
 #define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF
 #define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0
 #define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1
@@ -1064,7 +1064,7 @@
 #define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
 #define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
 #define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5
-#define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6
+#define FLAG_ITEM_ROUTE_114_NUGGET_10                              0x3F6
 #define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7
 #define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8
 #define FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH                          0x3F9
@@ -1078,15 +1078,15 @@
 #define FLAG_ITEM_ROUTE_119_ZINC                                    0x401
 #define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402
 #define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403
-#define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404
+#define FLAG_ITEM_ROUTE_119_NUGGET_10                              0x404
 #define FLAG_ITEM_ROUTE_119_HYPER_POTION_1                          0x405
 #define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
 #define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
 #define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408
-#define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
+#define FLAG_ITEM_ROUTE_123_NUGGET_10                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
 #define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A
 #define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B
-#define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
+#define FLAG_ITEM_ROUTE_132_NUGGET_10                              0x40C
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
 #define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E
 #define FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE                         0x40F
@@ -1104,7 +1104,7 @@
 #define FLAG_ITEM_GRANITE_CAVE_B1F_POKE_BALL                        0x41B
 #define FLAG_ITEM_MT_PYRE_5F_LAX_INCENSE                            0x41C
 #define FLAG_ITEM_GRANITE_CAVE_B2F_REPEL                            0x41D
-#define FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY                       0x41E
+#define FLAG_ITEM_GRANITE_CAVE_B2F_NUGGET_10                       0x41E
 #define FLAG_ITEM_PETALBURG_WOODS_X_ATTACK                          0x41F
 #define FLAG_ITEM_PETALBURG_WOODS_GREAT_BALL                        0x420
 #define FLAG_ITEM_ROUTE_104_POKE_BALL                               0x421
@@ -1132,7 +1132,7 @@
 #define FLAG_ITEM_SCORCHED_SLAB_TM_SUNNY_DAY                        0x437
 #define FLAG_ITEM_METEOR_FALLS_B1F_2R_TM_DRAGON_CLAW                0x438
 #define FLAG_ITEM_SHOAL_CAVE_ENTRANCE_BIG_PEARL                     0x439
-#define FLAG_ITEM_SHOAL_CAVE_INNER_ROOM_RARE_CANDY                  0x43A
+#define FLAG_ITEM_SHOAL_CAVE_INNER_ROOM_NUGGET_10                  0x43A
 #define FLAG_ITEM_SHOAL_CAVE_STAIRS_ROOM_ICE_HEAL                   0x43B
 #define FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR                        0x43C
 #define FLAG_ITEM_VICTORY_ROAD_1F_PP_UP                             0x43D
@@ -1201,11 +1201,11 @@
 #define FLAG_ITEM_ROUTE_120_REVIVE                                  0x47C
 #define FLAG_ITEM_ROUTE_121_REVIVE                                  0x47D
 #define FLAG_ITEM_ROUTE_121_ZINC                                    0x47E
-#define FLAG_ITEM_MAGMA_HIDEOUT_1F_RARE_CANDY                       0x47F
+#define FLAG_ITEM_MAGMA_HIDEOUT_1F_NUGGET_10                       0x47F
 #define FLAG_ITEM_ROUTE_123_PP_UP                                   0x480
 #define FLAG_ITEM_ROUTE_123_REVIVAL_HERB                            0x481
 #define FLAG_ITEM_ROUTE_125_BIG_PEARL                               0x482
-#define FLAG_ITEM_ROUTE_127_RARE_CANDY                              0x483
+#define FLAG_ITEM_ROUTE_127_NUGGET_10                              0x483
 #define FLAG_ITEM_ROUTE_132_PROTEIN                                 0x484
 #define FLAG_ITEM_ROUTE_133_MAX_REVIVE                              0x485
 #define FLAG_ITEM_ROUTE_134_CARBOS                                  0x486
