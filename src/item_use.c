@@ -71,6 +71,9 @@ static void Task_ShowTMHMContainedMessage(u8);
 static void UseTMHMYesNo(u8);
 static void UseTMHM(u8);
 static void Task_StartUseRepel(u8);
+static void Task_StartUseRepellent(u8);
+static void Task_UseRepellent(u8);
+static void Task_EndUseRepellent(u8);
 static void Task_StartUseLure(u8 taskId);
 static void Task_UseRepel(u8);
 static void Task_UseLure(u8 taskId);
@@ -904,6 +907,56 @@ static void RemoveUsedItem(void)
     {
         UpdatePyramidBagList();
         UpdatePyramidBagCursorPos();
+    }
+}
+
+void ItemUseOutOfBattle_Repellent(u8 taskId)
+{
+    u16 repellentVar = VarGet(VAR_REPELLENT_FLAG);
+    if (repellentVar == 1)
+        gTasks[taskId].func = Task_EndUseRepellent;
+    else
+        gTasks[taskId].func = Task_StartUseRepellent;
+}
+
+
+static void Task_StartUseRepellent(u8 taskId)
+{
+    VarSet(VAR_REPELLENT_FLAG, 1);
+
+    s16 *data = gTasks[taskId].data;
+    if (++data[8] > 7)
+    {
+        data[8] = 0;
+        PlaySE(SE_REPEL);
+        gTasks[taskId].func = Task_UseRepellent;
+    }
+}
+
+static void Task_UseRepellent(u8 taskId)
+{
+
+    if (!IsSEPlaying())
+    {
+        if (!gTasks[taskId].data[2]) // to account for pressing select in the overworld
+            DisplayItemMessageOnField(taskId, gText_RepellentActivated, Task_CloseCantUseKeyItemMessage);
+        else
+            DisplayItemMessage(taskId, FONT_NORMAL, gText_RepellentActivated, CloseItemMessage);
+    }
+}
+
+static void Task_EndUseRepellent(u8 taskId)
+{
+    VarSet(VAR_REPELLENT_FLAG, 0);
+
+    s16 *data = gTasks[taskId].data;
+    if (++data[8] > 7)
+    {
+        data[8] = 0;
+        if (!data[2]) // to account for pressing select in the overworld
+            DisplayItemMessageOnField(taskId, gText_RepellentDeactivated, Task_CloseCantUseKeyItemMessage);
+        else
+            DisplayItemMessage(taskId, FONT_NORMAL, gText_RepellentDeactivated, CloseItemMessage);
     }
 }
 

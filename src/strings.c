@@ -200,6 +200,10 @@ const u8 gText_PlayedPokeFluteCatchy[] = _("Played the POKé FLUTE.\pNow, that's
 const u8 gText_PlayedPokeFlute[] = _("Played the POKé FLUTE.");
 const u8 gText_PokeFluteAwakenedMon[] = _("The POKé FLUTE awakened sleeping\nPOKéMON.{PAUSE_UNTIL_PRESS}");
 
+// Custom
+const u8 gText_RepellentActivated[] = _("{PLAYER} activated repellent.{PAUSE_UNTIL_PRESS}");
+const u8 gText_RepellentDeactivated[] = _("{PLAYER} deactivated repellent.{PAUSE_UNTIL_PRESS}");
+
 const u8 *const gBagMenu_ReturnToStrings[] =
 {
     [ITEMMENULOCATION_FIELD]               = gText_TheField,

@@ -2140,6 +2140,21 @@ const struct Item gItemsInfo[] =
 
 // Encounter Modifiers
 
+    [ITEM_REPELLENT] = 
+    {
+        .name = _("Repellent"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Repels weak wild\n"
+            "Pokémon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .importance = 1,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Repellent,
+        .iconPic = gItemIcon_Repel,
+        .iconPalette = gItemIconPalette_MaxRepel,
+    },
+
     [ITEM_REPEL] =
     {
         .name = _("Repel"),
