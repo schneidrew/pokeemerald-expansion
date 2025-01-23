@@ -919,15 +919,15 @@ static const u8 sStatsToRaise[] =
 // 0-99, 100-199, 200+
 static const s8 sFriendshipEventModifiers[][3] =
 {
-    [FRIENDSHIP_EVENT_GROW_LEVEL]      = { 5,  3,  2},
-    [FRIENDSHIP_EVENT_VITAMIN]         = { 5,  3,  2},
-    [FRIENDSHIP_EVENT_BATTLE_ITEM]     = { 1,  1,  0},
-    [FRIENDSHIP_EVENT_LEAGUE_BATTLE]   = { 3,  2,  1},
-    [FRIENDSHIP_EVENT_LEARN_TMHM]      = { 1,  1,  0},
-    [FRIENDSHIP_EVENT_WALKING]         = { 1,  1,  1},
-    [FRIENDSHIP_EVENT_FAINT_SMALL]     = {-1, -1, -1},
-    [FRIENDSHIP_EVENT_FAINT_FIELD_PSN] = {-5, -5, -10},
-    [FRIENDSHIP_EVENT_FAINT_LARGE]     = {-5, -5, -10},
+    [FRIENDSHIP_EVENT_GROW_LEVEL]      = { 20,  15, 10  },
+    [FRIENDSHIP_EVENT_VITAMIN]         = { 5,   3,  2   },
+    [FRIENDSHIP_EVENT_BATTLE_ITEM]     = { 1,   1,  0   },
+    [FRIENDSHIP_EVENT_LEAGUE_BATTLE]   = { 3,   2,  1   },
+    [FRIENDSHIP_EVENT_LEARN_TMHM]      = { 10,  10, 10  },
+    [FRIENDSHIP_EVENT_WALKING]         = { 4,   3,  2   },
+    [FRIENDSHIP_EVENT_FAINT_SMALL]     = {-1,  -1, -1   },
+    [FRIENDSHIP_EVENT_FAINT_FIELD_PSN] = {-5,  -5, -10  },
+    [FRIENDSHIP_EVENT_FAINT_LARGE]     = {-5,  -5, -10  },
 };
 
 #define HM_MOVES_END 0xFFFF
@@ -5191,8 +5191,8 @@ void AdjustFriendship(struct Pokemon *mon, u8 event)
 
         mod = sFriendshipEventModifiers[event][friendshipLevel];
         if (mod > 0 && holdEffect == HOLD_EFFECT_FRIENDSHIP_UP)
-            // 50% increase, rounding down
-            mod = (150 * mod) / 100;
+            // 300% increase, rounding down
+            mod = (300 * mod) / 100;
 
         friendship += mod;
         if (mod > 0)

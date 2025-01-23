@@ -906,6 +906,7 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
+	giveitem ITEM_SOOTHE_BELL
 	closemessage
 	delay 30
 	return
