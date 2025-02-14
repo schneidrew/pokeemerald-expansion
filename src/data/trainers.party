@@ -338,17 +338,23 @@ Music: Aqua
 Double Battle: No
 AI: check bad move
 
-
-Meowth (F) @ ITEM_RAZOR_CLAW
-Level: 13
-Ability: ABILITY_FATAL_STRIKE
+SPECIES_SEVIPER (F)
+Ability: ABILITY_ENSNARE
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe
 Nature: Relaxed
-- scratch
+- iron head
+
+
+Persian (F) @ ITEM_RAZOR_CLAW
+Ability: ABILITY_FATAL_STRIKE
+IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe
+Nature: Adamant
+- Body Slam
+- Thunderbolt
+- Knock Off
 
 
 Slakoth (F) @ sitrus berry
-Level: 13
 Ability: ABILITY_TRUANT
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Nature: Relaxed

@@ -2380,6 +2380,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 5,
     },
 
+    [ABILITY_ENSNARE] = 
+    {
+        .name = _("Ensnare"),
+        .description = COMPOUND_STRING("Hits fleeing foes."),
+        .aiRating = 6,
+    },
+
     [ABILITY_CUD_CHEW] =
     {
         .name = _("Cud Chew"),
