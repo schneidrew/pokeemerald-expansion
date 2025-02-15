@@ -533,6 +533,7 @@ struct MoveInfo
     u32 cantUseTwice:1;
     u32 kickMove:1;
     u32 seedMove:1;
+    u32 celestialMove:1;
 
     // Ban flags
     u32 gravityBanned:1;

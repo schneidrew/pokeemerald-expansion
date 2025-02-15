@@ -338,6 +338,12 @@ Music: Aqua
 Double Battle: No
 AI: check bad move
 
+SPECIES_SOLROCK
+Ability: ABILITY_CELESTIAL_BODY
+IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe
+Nature: Relaxed
+- Moonlight
+
 SPECIES_SEVIPER (F)
 Ability: ABILITY_ENSNARE
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe

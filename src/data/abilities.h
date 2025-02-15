@@ -238,6 +238,14 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
+    [ABILITY_CELESTIAL_BODY] = 
+    {
+        .name = _("Celestial Body"),
+        .description = COMPOUND_STRING("Floating; power up celestial moves."),
+        .aiRating = 7,
+        .breakable = TRUE,
+    },
+
     [ABILITY_EFFECT_SPORE] =
     {
         .name = _("Effect Spore"),
