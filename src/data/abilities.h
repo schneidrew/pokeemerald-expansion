@@ -2234,6 +2234,14 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
+    [ABILITY_SOUND_SURFER] = 
+    {
+        .name = _("Sound Surfer"),
+        .description = COMPOUND_STRING("Ups Sp. Attack if hit by sound."),
+        .aiRating = 4,
+        .breakable = TRUE,
+    },
+
     [ABILITY_GUARD_DOG] =
     {
         .name = _("Guard Dog"),
@@ -2406,6 +2414,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Sharpness"),
         .description = COMPOUND_STRING("Strengthens slicing moves."),
+        .aiRating = 7,
+    },
+
+    [ABILITY_DRAINER] = 
+    {
+        .name = _("Drainer"),
+        .description = COMPOUND_STRING("Strengthens healing moves."),
         .aiRating = 7,
     },
 

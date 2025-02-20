@@ -338,11 +338,17 @@ Music: Aqua
 Double Battle: No
 AI: check bad move
 
+SPECIES_LUDICOLO
+Ability: ABILITY_SOUND_SURFER
+Nature: Relaxed
+- Absorb
+
 SPECIES_SOLROCK
 Ability: ABILITY_CELESTIAL_BODY
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 15 Spe
 Nature: Relaxed
-- Moonlight
+- MOVE_SUNNY_DAY
+- MOVE_SUNSTEEL_STRIKE
 
 SPECIES_SEVIPER (F)
 Ability: ABILITY_ENSNARE
