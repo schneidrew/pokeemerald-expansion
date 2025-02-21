@@ -6260,6 +6260,24 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_ACCURSE:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && IsBattlerAlive(gBattlerTarget)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && GetBattlerHoldEffect(gBattlerAttacker, TRUE) != HOLD_EFFECT_PROTECTIVE_PADS
+             && IsMoveMakingContact(move, gBattlerAttacker)
+             && TARGET_TURN_DAMAGED // Need to actually hit the target
+             && !(gBattleMons[gBattlerTarget].status2 & STATUS2_CURSED))
+            {
+                gBattleMons[gBattlerTarget].status2 |= STATUS2_CURSED;
+                gBattleMoveDamage = GetNonDynamaxMaxHP(gBattlerAttacker) / 2;
+                if (gBattleMoveDamage == 0)
+                    gBattleMoveDamage = 1;
+                
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_AccurseActivates;
+            }
+            break;
         case ABILITY_TOXIC_OOZE:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && IsBattlerAlive(gBattlerTarget)

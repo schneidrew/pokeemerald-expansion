@@ -338,10 +338,10 @@ Music: Aqua
 Double Battle: No
 AI: check bad move
 
-SPECIES_LUDICOLO
-Ability: ABILITY_SOUND_SURFER
+SPECIES_BANETTE
+Ability: ABILITY_ACCURSE
 Nature: Relaxed
-- Absorb
+- MOVE_SHADOW_SNEAK
 
 SPECIES_SOLROCK
 Ability: ABILITY_CELESTIAL_BODY

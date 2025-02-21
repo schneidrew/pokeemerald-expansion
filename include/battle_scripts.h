@@ -861,6 +861,7 @@ extern const u8 BattleScript_CorneredActivates[];
 extern const u8 BattleScript_AbilityPestilence[];
 extern const u8 BattleScript_SweetAromaActivates[];
 extern const u8 BattleScript_OnGuardActivates[];
+extern const u8 BattleScript_AccurseActivates[];
 
 
 #endif // GUARD_BATTLE_SCRIPTS_H

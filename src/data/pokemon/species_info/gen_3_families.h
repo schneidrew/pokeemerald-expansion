@@ -8464,9 +8464,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_INSOMNIA, ABILITY_FRISK, ABILITY_CURSED_BODY },
+        .abilities = { ABILITY_INSOMNIA, ABILITY_FRISK, ABILITY_ACCURSE },
     #else
-        .abilities = { ABILITY_INSOMNIA, ABILITY_NONE, ABILITY_CURSED_BODY },
+        .abilities = { ABILITY_INSOMNIA, ABILITY_NONE, ABILITY_ACCURSE },
     #endif
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Banette"),

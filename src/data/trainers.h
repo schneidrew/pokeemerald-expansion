@@ -663,12 +663,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 341
-            .species = SPECIES_LUDICOLO,
+            .species = SPECIES_BANETTE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 344
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 342
-            .ability = ABILITY_SOUND_SURFER,
+            .ability = ABILITY_ACCURSE,
 #line 344
             .lvl = 5,
 #line 343
@@ -676,7 +676,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 344
-                MOVE_ABSORB,
+                MOVE_SHADOW_SNEAK,
             },
             },
             {

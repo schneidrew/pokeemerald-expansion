@@ -1050,7 +1050,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ACCURSE] = 
     {
         .name = _("Accurse"),
-        .description = COMPOUND_STRING("Curses for on contact."),
+        .description = COMPOUND_STRING("Curses foe on contact."),
         .aiRating = 4,
     },
 

@@ -4210,6 +4210,13 @@ BattleScript_DoGhostCurse::
 	tryfaintmon BS_ATTACKER
 	goto BattleScript_MoveEnd
 
+BattleScript_AccurseActivates::
+	copybyte gBattlerAbility, gBattlerAttacker
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_PKMNACCURSEACTIVATES
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
 BattleScript_EffectMatBlock::
 	attackcanceler
 	jumpifnotfirstturn BattleScript_FailedFromAtkString
