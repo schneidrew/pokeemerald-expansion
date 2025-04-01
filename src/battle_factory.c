@@ -166,6 +166,29 @@ static const u8 sFixedIVTable[][2] =
     {31, 31},
 };
 
+// static const u16 sInitialRentalMonRanges[][2] =
+// {
+//     // Level 50
+//     {ROUND_1_START,     ROUND_2_START - 1},   // 110 - 199
+//     {ROUND_2_START,     ROUND_3_START - 1},  // 162 - 266
+//     {ROUND_3_START,     ROUND_4_START - 1},  // 267 - 371
+//     {ROUND_4_START,     ROUND_5_START - 1},  // 372 - 467
+//     {ROUND_5_START,     ROUND_6_START - 1},  // 468 - 563
+//     {ROUND_6_START,     ROUND_7_START - 1},  // 564 - 659
+//     {ROUND_7_START,     ROUND_8_START - 1},  // 660 - 755
+//     {ROUND_4_START,     OPEN_ROUND_START - 1}, // 372 - 849
+
+//     // Open level
+//     {ROUND_4_START, ROUND_5_START - 1}, // 372 - 467
+//     {ROUND_5_START, ROUND_6_START - 1}, // 468 - 563
+//     {ROUND_6_START, ROUND_7_START - 1}, // 564 - 659
+//     {ROUND_7_START, ROUND_8_START - 1}, // 660 - 755
+//     {ROUND_4_START, NUM_FRONTIER_MONS - 1},  // 372 - 881
+//     {ROUND_4_START, NUM_FRONTIER_MONS - 1},  // 372 - 881
+//     {ROUND_4_START, NUM_FRONTIER_MONS - 1},  // 372 - 881
+//     {ROUND_4_START, NUM_FRONTIER_MONS - 1},  // 372 - 881
+// };
+
 static const u16 sInitialRentalMonRanges[][2] =
 {
     // Level 50
