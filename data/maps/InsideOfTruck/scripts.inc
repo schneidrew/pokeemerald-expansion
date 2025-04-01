@@ -32,6 +32,7 @@ InsideOfTruck_EventScript_SetIntroFlagsMale::
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1
 	setdynamicwarp MAP_LITTLEROOT_TOWN, 3, 10
 	setdynamicwarp MAP_BATTLE_FRONTIER_BATTLE_FACTORY_LOBBY, 2, 10
+	giveitem ITEM_MEGA_RING
 	releaseall
 	end
 
@@ -46,6 +47,7 @@ InsideOfTruck_EventScript_SetIntroFlagsFemale::
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1
 	setdynamicwarp MAP_LITTLEROOT_TOWN, 12, 10
 	setdynamicwarp MAP_BATTLE_FRONTIER_BATTLE_FACTORY_LOBBY, 2, 10
+	giveitem ITEM_MEGA_RING
 	releaseall
 	end
 

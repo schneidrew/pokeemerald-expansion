@@ -166,51 +166,51 @@ static const u8 sFixedIVTable[][2] =
     {31, 31},
 };
 
-// static const u16 sInitialRentalMonRanges[][2] =
-// {
-//     // Level 50
-//     {ROUND_1_START,     ROUND_2_START - 1},   // 110 - 199
-//     {ROUND_2_START,     ROUND_3_START - 1},  // 162 - 266
-//     {ROUND_3_START,     ROUND_4_START - 1},  // 267 - 371
-//     {ROUND_4_START,     ROUND_5_START - 1},  // 372 - 467
-//     {ROUND_5_START,     ROUND_6_START - 1},  // 468 - 563
-//     {ROUND_6_START,     ROUND_7_START - 1},  // 564 - 659
-//     {ROUND_7_START,     ROUND_8_START - 1},  // 660 - 755
-//     {ROUND_4_START,     OPEN_ROUND_START - 1}, // 372 - 849
-
-//     // Open level
-//     {ROUND_4_START, ROUND_5_START - 1}, // 372 - 467
-//     {ROUND_5_START, ROUND_6_START - 1}, // 468 - 563
-//     {ROUND_6_START, ROUND_7_START - 1}, // 564 - 659
-//     {ROUND_7_START, ROUND_8_START - 1}, // 660 - 755
-//     {ROUND_4_START, NUM_FRONTIER_MONS - 1},  // 372 - 881
-//     {ROUND_4_START, NUM_FRONTIER_MONS - 1},  // 372 - 881
-//     {ROUND_4_START, NUM_FRONTIER_MONS - 1},  // 372 - 881
-//     {ROUND_4_START, NUM_FRONTIER_MONS - 1},  // 372 - 881
-// };
-
 static const u16 sInitialRentalMonRanges[][2] =
 {
     // Level 50
-    {FRONTIER_MON_GRIMER,     FRONTIER_MON_FURRET_1},   // 110 - 199
-    {FRONTIER_MON_DELCATTY_1, FRONTIER_MON_CLOYSTER_1}, // 162 - 266
-    {FRONTIER_MON_DELCATTY_2, FRONTIER_MON_CLOYSTER_2}, // 267 - 371
-    {FRONTIER_MON_DUGTRIO_1,  FRONTIER_MON_SLAKING_1},  // 372 - 467
-    {FRONTIER_MON_DUGTRIO_2,  FRONTIER_MON_SLAKING_2},  // 468 - 563
-    {FRONTIER_MON_DUGTRIO_3,  FRONTIER_MON_SLAKING_3},  // 564 - 659
-    {FRONTIER_MON_DUGTRIO_4,  FRONTIER_MON_SLAKING_4},  // 660 - 755
-    {FRONTIER_MON_DUGTRIO_1,  FRONTIER_MONS_HIGH_TIER}, // 372 - 849
+    {ROUND_1_START,     ROUND_2_START - 1},   // 110 - 199
+    {ROUND_2_START,     ROUND_3_START - 1},  // 162 - 266
+    {ROUND_3_START,     ROUND_4_START - 1},  // 267 - 371
+    {ROUND_4_START,     ROUND_5_START - 1},  // 372 - 467
+    {ROUND_5_START,     ROUND_6_START - 1},  // 468 - 563
+    {ROUND_6_START,     ROUND_7_START - 1},  // 564 - 659
+    {ROUND_7_START,     ROUND_8_START - 1},  // 660 - 755
+    {ROUND_4_START,     OPEN_ROUND_START - 1}, // 372 - 849
 
     // Open level
-    {FRONTIER_MON_DUGTRIO_1, FRONTIER_MON_SLAKING_1}, // 372 - 467
-    {FRONTIER_MON_DUGTRIO_2, FRONTIER_MON_SLAKING_2}, // 468 - 563
-    {FRONTIER_MON_DUGTRIO_3, FRONTIER_MON_SLAKING_3}, // 564 - 659
-    {FRONTIER_MON_DUGTRIO_4, FRONTIER_MON_SLAKING_4}, // 660 - 755
-    {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
-    {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
-    {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
-    {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
+    {ROUND_4_START, ROUND_5_START - 1}, // 372 - 467
+    {ROUND_5_START, ROUND_6_START - 1}, // 468 - 563
+    {ROUND_6_START, ROUND_7_START - 1}, // 564 - 659
+    {ROUND_7_START, ROUND_8_START - 1}, // 660 - 755
+    {ROUND_4_START, NUM_FRONTIER_MONS - 1},  // 372 - 881
+    {ROUND_4_START, NUM_FRONTIER_MONS - 1},  // 372 - 881
+    {ROUND_4_START, NUM_FRONTIER_MONS - 1},  // 372 - 881
+    {ROUND_4_START, NUM_FRONTIER_MONS - 1},  // 372 - 881
 };
+
+// static const u16 sInitialRentalMonRanges[][2] =
+// {
+//     // Level 50
+//     {FRONTIER_MON_GRIMER,     FRONTIER_MON_FURRET_1},   // 110 - 199
+//     {FRONTIER_MON_DELCATTY_1, FRONTIER_MON_CLOYSTER_1}, // 162 - 266
+//     {FRONTIER_MON_DELCATTY_2, FRONTIER_MON_CLOYSTER_2}, // 267 - 371
+//     {FRONTIER_MON_DUGTRIO_1,  FRONTIER_MON_SLAKING_1},  // 372 - 467
+//     {FRONTIER_MON_DUGTRIO_2,  FRONTIER_MON_SLAKING_2},  // 468 - 563
+//     {FRONTIER_MON_DUGTRIO_3,  FRONTIER_MON_SLAKING_3},  // 564 - 659
+//     {FRONTIER_MON_DUGTRIO_4,  FRONTIER_MON_SLAKING_4},  // 660 - 755
+//     {FRONTIER_MON_DUGTRIO_1,  FRONTIER_MONS_HIGH_TIER}, // 372 - 849
+
+//     // Open level
+//     {FRONTIER_MON_DUGTRIO_1, FRONTIER_MON_SLAKING_1}, // 372 - 467
+//     {FRONTIER_MON_DUGTRIO_2, FRONTIER_MON_SLAKING_2}, // 468 - 563
+//     {FRONTIER_MON_DUGTRIO_3, FRONTIER_MON_SLAKING_3}, // 564 - 659
+//     {FRONTIER_MON_DUGTRIO_4, FRONTIER_MON_SLAKING_4}, // 660 - 755
+//     {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
+//     {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
+//     {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
+//     {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
+// };
 
 // code
 void CallBattleFactoryFunction(void)
@@ -371,7 +371,7 @@ static void GenerateOpponentMons(void)
             continue;
 
         // "High tier" Pokémon are only allowed on open level mode
-        if (lvlMode == FRONTIER_LVL_50 && monId > FRONTIER_MONS_HIGH_TIER)
+        if (lvlMode == FRONTIER_LVL_50 && monId > OPEN_ROUND_START)
             continue;
 
         // Ensure this species hasn't already been chosen for the opponent
@@ -744,7 +744,7 @@ void FillFactoryBrainParty(void)
 
         if (gFacilityTrainerMons[monId].species == SPECIES_UNOWN)
             continue;
-        if (monLevel == FRONTIER_MAX_LEVEL_50 && monId > FRONTIER_MONS_HIGH_TIER)
+        if (monLevel == FRONTIER_MAX_LEVEL_50 && monId > OPEN_ROUND_START)
             continue;
 
         for (j = 0; j < (int)ARRAY_COUNT(gSaveBlock2Ptr->frontier.rentalMons); j++)
