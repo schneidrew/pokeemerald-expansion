@@ -1569,18 +1569,14 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
 {
     u8 ball = (fmon->ball == 0xFF) ? Random() % POKEBALL_COUNT : fmon->ball;
     u16 move;
-    u32 personality = 0, ability, friendship, j;
+    u32 personality, ability, friendship, j;
 
-    if (fmon->gender == TRAINER_MON_MALE)
+    do
     {
-        personality = GeneratePersonalityForGender(MON_MALE, fmon->species);
+        personality = Random32();
     }
-    else if (fmon->gender == TRAINER_MON_FEMALE)
-    {
-        personality = GeneratePersonalityForGender(MON_FEMALE, fmon->species);
-    }
+    while (fmon->nature != GetNatureFromPersonality(personality));
 
-    ModifyPersonalityForNature(&personality, fmon->nature);
     CreateMon(dst, fmon->species, level, fixedIV, TRUE, personality, otID, OT_ID_PRESET);
 
     friendship = MAX_FRIENDSHIP;
@@ -1598,6 +1594,7 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
 
     SetMonData(dst, MON_DATA_FRIENDSHIP, &friendship);
     SetMonData(dst, MON_DATA_HELD_ITEM, &fmon->heldItem);
+
 
     // try to set ability. Otherwise, random of non-hidden as per vanilla
     if (fmon->ability != ABILITY_NONE)
